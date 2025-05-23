@@ -355,7 +355,7 @@ a:hover {
 	float: right;
 	font-style: italic;
 	margin: 15px 0 18px 0;
-	width: 220px;
+	-webkit-text-size-adjust: none;
 }
 
 /* This is the custom header image */
@@ -1320,9 +1320,6 @@ code {
 .navigation,
 .widget-area {
 	-webkit-text-size-adjust: 120%;
-}
-#site-description {
-	-webkit-text-size-adjust: none;
 }
 
 
