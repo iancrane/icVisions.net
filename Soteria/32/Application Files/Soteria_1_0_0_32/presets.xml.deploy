@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Presets version="1.0">
+  <Preset max="20" chars="~!@#$%^&amp;*?_-();.+:[]{}\">Strong</Preset>
+  <Preset max="0" chars="">None</Preset>
+  <Preset max="30" chars="_!@#$%">AllRecipes.com</Preset>
+  <Preset max="20" chars="~@#%*?_-();.+{}">Bank of America</Preset>
+  <Preset max="20" chars="!@#$%*">Game Stop</Preset>
+  <Preset max="20" chars="!@#%*)(_-=+|[]{}.,/">GoDaddy</Preset>
+</Presets>

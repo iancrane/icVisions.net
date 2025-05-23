@@ -1,0 +1,417 @@
+
+H1
+{  font-family:Arial;
+  font-size:12pt;
+  font-weight:bold;
+  font-style:normal;
+  color:#000080;
+  margin-top:8pt;
+  margin-bottom:3pt;
+}
+
+H2
+{  font-family:Arial;
+  font-size:11pt;
+  font-weight:bold;
+  font-style:italic;
+  color:#000080;
+  margin-top:8pt;
+  margin-bottom:2pt;
+}
+
+H3
+{  font-family:Arial;
+  font-size:10pt;
+  font-weight:bold;
+  font-style:normal;
+  color:#000080;
+  margin-top:4pt;
+  margin-bottom:2pt;
+}
+
+P.ctlhdr
+{  font-family:Arial;
+  font-size:11pt;
+  font-weight:bold;
+  font-style:italic;
+  color:#000080;
+  margin-top:8pt;
+  margin-bottom:2pt;
+}
+
+BODY
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+}
+
+SPAN.filelink
+{  text-decoration:underline;
+  color:Blue;
+  cursor:hand;
+}
+
+SPAN.term
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+}
+
+SPAN.function
+{  font-weight:bold;
+  font-style:normal;
+}
+
+SPAN.valuelistitem
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:italic;
+}
+
+SPAN.label
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+}
+
+SPAN.note
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:italic;
+}
+
+SPAN.dialog
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+}
+
+SPAN.literal
+{  font-family:Courier New;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+}
+
+SPAN.param
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:italic;
+}
+
+SPAN.button
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+}
+
+SPAN.menu
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:italic;
+}
+
+SPAN.command
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+}
+
+SPAN.caption
+{  font-family:Arial;
+  font-size:8pt;
+  font-style:italic;
+}
+
+SPAN.footnote
+{  font-family:Arial;
+  font-size:8pt;
+  font-weight:normal;
+  font-style:normal;
+  color:Gray;
+}
+
+SPAN.disabled
+{  color:Gray;
+}
+
+TH
+{  text-align:left;
+  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+  padding-left:0pt;
+  padding-top:2pt;
+  padding-bottom:2pt;
+}
+
+TD
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+  padding-left:0pt;
+  padding-top:2pt;
+  padding-bottom:2pt;
+}
+
+TD.title
+{  background-color:Navy;
+  font-family:Arial;
+  font-size:8pt;
+  font-weight:bold;
+  font-style:normal;
+  color:White;
+  padding-left:6pt;
+  padding-right:6pt;
+  padding-top:2pt;
+  padding-bottom:2pt;
+}
+
+UL
+{  margin-top:0pt;
+  margin-left:16pt;
+}
+
+SPAN.toc-group0
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+  margin-top:8pt;
+  margin-left:16px;
+  color:Navy;
+}
+
+SPAN.toc-leaf0
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+  margin-left:16px;
+  color:Black;
+}
+
+SPAN.toc-group1
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+  margin-top:8pt;
+  margin-left:32px;
+  color:Navy;
+}
+
+SPAN.toc-leaf1
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+  margin-left:32px;
+  color:Black;
+}
+
+SPAN.toc-group2
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+  margin-top:8pt;
+  margin-left:48px;
+  color:Navy;
+}
+
+SPAN.toc-leaf2
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+  margin-left:48px;
+  color:Black;
+}
+
+SPAN.toc-group3
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+  margin-top:8pt;
+  margin-left:64px;
+  color:Navy;
+}
+
+SPAN.toc-leaf3
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+  margin-left:64px;
+  color:Black;
+}
+
+SPAN.toc-group4
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+  margin-top:8pt;
+  margin-left:80px;
+  color:Navy;
+}
+
+SPAN.toc-leaf4
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+  margin-left:80px;
+  color:Black;
+}
+
+SPAN.toc-group5
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+  margin-top:8pt;
+  margin-left:96px;
+  color:Navy;
+}
+
+SPAN.toc-leaf5
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+  margin-left:96px;
+  color:Black;
+}
+
+SPAN.toc-group6
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+  margin-top:8pt;
+  margin-left:112px;
+  color:Navy;
+}
+
+SPAN.toc-leaf6
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+  margin-left:112px;
+  color:Black;
+}
+
+SPAN.toc-group7
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+  margin-top:8pt;
+  margin-left:128px;
+  color:Navy;
+}
+
+SPAN.toc-leaf7
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+  margin-left:128px;
+  color:Black;
+}
+
+SPAN.toc-group8
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+  margin-top:8pt;
+  margin-left:144px;
+  color:Navy;
+}
+
+SPAN.toc-leaf8
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+  margin-left:144px;
+  color:Black;
+}
+
+SPAN.toc-group9
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:normal;
+  margin-top:8pt;
+  margin-left:160px;
+  color:Navy;
+}
+
+SPAN.toc-leaf9
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+  margin-left:160px;
+  color:Black;
+}
+
+IMG.toc-group
+{  margin-top:6pt;
+}
+
+IMG.toc-leaf
+{  margin-top:2pt;
+}
+
+P.idx-keyword
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:bold;
+  font-style:italic;
+  color:Navy;
+  margin-top:8pt;
+  margin-bottom:2pt;
+}
+
+SPAN.idx-topic
+{  font-family:Arial;
+  font-size:9pt;
+  font-weight:normal;
+  font-style:normal;
+  margin-left:32px;
+  color:Black;
+}
+
+SPAN.timestamp
+{  font-family:Arial;
+  font-size:8pt;
+  font-weight:normal;
+  font-style:italic;
+  color:Gray;
+}
+
+a:link, a:visited, a:active { 
+ text-decoration: none;
+}
+a:hover { 
+ text-decoration: underline;
+}

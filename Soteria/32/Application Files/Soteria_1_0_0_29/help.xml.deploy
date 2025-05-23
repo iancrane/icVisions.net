@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help version="1.0">
+  <TopicGroup name="frmMain" context="Empty" count="1">
+    <Topic index="0">http://soteriapassword.com/m/getting-started/</Topic>
+  </TopicGroup>
+  <TopicGroup name="frmMain" context="General" count="4">
+    <Topic index="0">http://soteriapassword.com/m/super-fast/</Topic>
+    <Topic index="1">http://soteriapassword.com/m/auto-copy-password/</Topic>
+    <Topic index="2">http://soteriapassword.com/m/recommended-approach/</Topic>
+    <Topic index="3">http://soteriapassword.com/m/faster-logins/</Topic>
+  </TopicGroup>
+  <TopicGroup name="frmEditEntry" context="Create" count="1">
+    <Topic index="0">http://soteriapassword.com/m/create-password/</Topic>
+  </TopicGroup>
+  <TopicGroup name="frmEditEntry" context="Edit" count="1">
+    <Topic index="0">http://soteriapassword.com/m/edit-password/</Topic>
+  </TopicGroup>
+  <TopicGroup name="frmGeneratePassword" context="General" count="5">
+    <Topic index="0">http://soteriapassword.com/m/password-generator/</Topic>
+    <Topic index="1">http://soteriapassword.com/m/recommended-approach/</Topic>
+    <Topic index="2">http://soteriapassword.com/m/password-strength/</Topic>
+    <Topic index="3">http://soteriapassword.com/m/special-character-presets/</Topic>
+    <Topic index="4">http://soteriapassword.com/m/roll-your-own/</Topic>
+  </TopicGroup>
+</Help>

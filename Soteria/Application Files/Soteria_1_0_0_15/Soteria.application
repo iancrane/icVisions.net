@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <assemblyIdentity name="Soteria.application" version="1.0.0.15" publicKeyToken="b541d9eed4fe0e1c" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:publisher="icVisions Corporation" asmv2:product="Soteria Password" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true" mapFileExtensions="true" co.v1:createDesktopShortcut="true">
+    <subscription>
+      <update>
+        <expiration maximumAge="0" unit="days" />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="http://www.icvisions.net/Soteria/Soteria.application" />
+  </deployment>
+  <dependency>
+    <dependentAssembly dependencyType="install" codebase="Application Files\Soteria_1_0_0_15\Soteria.exe.manifest" size="13455">
+      <assemblyIdentity name="Soteria.exe" version="1.0.0.15" publicKeyToken="b541d9eed4fe0e1c" language="neutral" processorArchitecture="x86" type="win32" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>xOYQHV5Xfh28hbfjZ4xTPTAg90I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=ANCHOR\ianc" issuerKeyHash="0a8ef208834f81582d82a42993704a6ff2b30b4c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>goAlYXpwnxiViTpfB8/bVKlPIuY=</DigestValue></Reference></SignedInfo><SignatureValue>ZDck4CwT2u7KPlRq2v3SyDAQVdtdIUxgwt4LTM5HLeeo+ww4kR2tbICzE467NGTIs/KsQNKegL8rlaegdRtipzw6vUmJfxpNvc+49NAs5KqUYJX8rpBXWCAUeP9+rRFXg30VUiXOja79VQsdfydbYPjzAywF3/m1i6qGSpVFkFQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>hjW8UiAMr8r6CYVLIMLi2RepyKvA0nCy5BZHl6UykUAeccCN5nC0Q7GDoEIWpFiAIRwywC3MaAZFiinN3Q2q1yKEzzfbMMLIuu3GPlWSCn69NTtffhGuS7pdutTeNjLGtJB/ZbgcVcUONHKlQ6hIJ8Gxmbhej1BKmRu/NKD79pk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e6224fa954dbcf075f3a8995189f707a61258082" Description="" Url=""><as:assemblyIdentity name="Soteria.application" version="1.0.0.15" publicKeyToken="b541d9eed4fe0e1c" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ANCHOR\ianc</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>LVoXdwnNC0llMFyBBswluOOBvgU=</DigestValue></Reference></SignedInfo><SignatureValue>HV8JYXST7nk+Ij9zvqQfQaI2/PeAtIEaBQ6HjK2LzeknfhhDLaES64mbiSfy9ka/7MdRLcwcsjpmyAfuB+wk75LAe+EGJUIJ+3kmgeQZHWso2VjI/wqSv8rvQFIM9zxABtPfh3LUw6vOTwBfyab0ugSmqUXqLvwK+LBji3/UexA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>hjW8UiAMr8r6CYVLIMLi2RepyKvA0nCy5BZHl6UykUAeccCN5nC0Q7GDoEIWpFiAIRwywC3MaAZFiinN3Q2q1yKEzzfbMMLIuu3GPlWSCn69NTtffhGuS7pdutTeNjLGtJB/ZbgcVcUONHKlQ6hIJ8Gxmbhej1BKmRu/NKD79pk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBvTCCASqgAwIBAgIQQkkmTqN0JpJO4USGh8KOKjAJBgUrDgMCHQUAMCExHzAdBgNVBAMeFgBBAE4AQwBIAE8AUgBcAGkAYQBuAGMwHhcNMTEwMzI4MDE0NTQxWhcNMTIwMzI3MDc0NTQxWjAhMR8wHQYDVQQDHhYAQQBOAEMASABPAFIAXABpAGEAbgBjMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCGNbxSIAyvyvoJhUsgwuLZF6nIq8DScLLkFkeXpTKRQB5xwI3mcLRDsYOgQhakWIAhHDLALcxoBkWKKc3dDarXIoTPN9swwsi67cY+VZIKfr01O19+Ea5Lul261N42Msa0kH9luBxVxQ40cqVDqEgnwbGZuF6PUEqZG780oPv2mQIDAQABMAkGBSsOAwIdBQADgYEAdMZs1eNP/SbF/yG4BuSCPvT1eomvQ3bLQdVTVf8S6AbXnLTb5GjUTnyJX6r1Qzmrwnv6+W9Cjd6QEbcFhOVDDK4VNtIuOmBLjsVX0qZzSuQ6ujx4XC5CXfrfR2tbqlPQKBOgp7gXM4VEfWGTSJezNrgFlDK3z93N56zHnjdR4tI=</X509Certificate></X509Data></KeyInfo><Object><as:Timestamp>MIIJcQYJKoZIhvcNAQcCoIIJYjCCCV4CAQExCzAJBgUrDgMCGgUAMIGRBgkqhkiG
+9w0BBwGggYMEgYAdXwlhdJPueT4iP3O+pB9Bojb894C0gRoFDoeMrYvN6Sd+GEMt
+oRLriZuJJ/L2Rr/sx1EtzByyOmbIB+4H7CTvksB74QYlQgn7eSaB5BkdayjZWMj/
+CpK/yu9AUgz3PEAG09+HctTDq85PAF/JpvS6BKapReou/Ar4sGOLf9R7EKCCB0Yw
+ggN6MIICYqADAgECAhA4Jdf6+GGvnvSQ5ya11lrVMA0GCSqGSIb3DQEBBQUAMFMx
+CzAJBgNVBAYTAlVTMRcwFQYDVQQKEw5WZXJpU2lnbiwgSW5jLjErMCkGA1UEAxMi
+VmVyaVNpZ24gVGltZSBTdGFtcGluZyBTZXJ2aWNlcyBDQTAeFw0wNzA2MTUwMDAw
+MDBaFw0xMjA2MTQyMzU5NTlaMFwxCzAJBgNVBAYTAlVTMRcwFQYDVQQKEw5WZXJp
+U2lnbiwgSW5jLjE0MDIGA1UEAxMrVmVyaVNpZ24gVGltZSBTdGFtcGluZyBTZXJ2
+aWNlcyBTaWduZXIgLSBHMjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxLXy
+UhW8iIZgKRZKWy9LkWuHkfM1VFg16tE2XmJNUlE0ccJ7Zh2JyN0qxGoK9jfZmHSR
+9pKusLV2lvGpSmNFRy5rC5JOSyuM7lhKi9QH5Bos+IKqWNnNQvMtwHXejavHjh2a
+bEwIlR7e2+9n4XLCScKeYDzh4r4Wo2N4aRR7rS0CAwEAAaOBxDCBwTA0BggrBgEF
+BQcBAQQoMCYwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLnZlcmlzaWduLmNvbTAM
+BgNVHRMBAf8EAjAAMDMGA1UdHwQsMCowKKAmoCSGImh0dHA6Ly9jcmwudmVyaXNp
+Z24uY29tL3Rzcy1jYS5jcmwwFgYDVR0lAQH/BAwwCgYIKwYBBQUHAwgwDgYDVR0P
+AQH/BAQDAgbAMB4GA1UdEQQXMBWkEzARMQ8wDQYDVQQDEwZUU0ExLTIwDQYJKoZI
+hvcNAQEFBQADggEBAFDFS8gkgN/kDSTC3hqxoQKhpoItDIMVgTcKgg4ssFoXYbXY
+Bf6I2/GRkbNWGkCm65K+ODmwdTZ0OphP5De6mYnKlUIdsLnHoI1X4PrVZARCNU4B
+0TOiF8hNqifH8uGGTAI4TYN4xvxT4OvgBofdpJaeXgyY4qW+v4KFw2Dh360o2Mel
+S2Taxxtbvaw5CNU4IqEziy+Kmuu8ByE/REEJB7VlHCS8SNNEgOuhz8kCtBTPVMcW
+o4Bc+Xk+XXJ9iBeeLEOiylPOfT32Kjq4T5QApW0Kg135XlP0GLNXD3DD+/WtlaAO
+F97EFoBgyQ8rboYE8ev0eCfRBcXuNFteuUky8jMwggPEMIIDLaADAgECAhBHvxmV
+341SRkP3221IDTGkMA0GCSqGSIb3DQEBBQUAMIGLMQswCQYDVQQGEwJaQTEVMBMG
+A1UECBMMV2VzdGVybiBDYXBlMRQwEgYDVQQHEwtEdXJiYW52aWxsZTEPMA0GA1UE
+ChMGVGhhd3RlMR0wGwYDVQQLExRUaGF3dGUgQ2VydGlmaWNhdGlvbjEfMB0GA1UE
+AxMWVGhhd3RlIFRpbWVzdGFtcGluZyBDQTAeFw0wMzEyMDQwMDAwMDBaFw0xMzEy
+MDMyMzU5NTlaMFMxCzAJBgNVBAYTAlVTMRcwFQYDVQQKEw5WZXJpU2lnbiwgSW5j
+LjErMCkGA1UEAxMiVmVyaVNpZ24gVGltZSBTdGFtcGluZyBTZXJ2aWNlcyBDQTCC
+ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKnKsqTMzSCvCn2JrId18LRO
+8d/BD79nYb2jZBzau/nKM6uEMIlYfozba902ng+/0ex48nemfm88v5OvDbpo9GyU
+yr1SLatIPfW21V1fGwKf+i9rHqT3o5qmGsgC4X9MUuMOYOxAHH65Dd4/x7Tfh71f
+emoxLgOZgROoRyDOMXMNVy3NeDQzlRKZErneaC+q5uPCiowqw4shh2a9g1hXb3W/
+PKomh13KEBU8n4TqVMEKbsT+xUrduQcRlyJ82z4n0R547J8xyfHmIhnbxLNHQ5oa
+X6AekORe9e588X2rYgGP9U0L3tAiVqiVza6Idq7uug3z5E3ZoPtooK4UO7OHwbsC
+AwEAAaOB2zCB2DA0BggrBgEFBQcBAQQoMCYwJAYIKwYBBQUHMAGGGGh0dHA6Ly9v
+Y3NwLnZlcmlzaWduLmNvbTASBgNVHRMBAf8ECDAGAQH/AgEAMEEGA1UdHwQ6MDgw
+NqA0oDKGMGh0dHA6Ly9jcmwudmVyaXNpZ24uY29tL1RoYXd0ZVRpbWVzdGFtcGlu
+Z0NBLmNybDATBgNVHSUEDDAKBggrBgEFBQcDCDAOBgNVHQ8BAf8EBAMCAQYwJAYD
+VR0RBB0wG6QZMBcxFTATBgNVBAMTDFRTQTIwNDgtMS01MzANBgkqhkiG9w0BAQUF
+AAOBgQBKa/nqWMJEHDGJeZkrlr+CrAHWHEzNsIpYbt8IKaNeyMqTE+cEUg3vRycv
+ADiw5MmTTprUImIV9z83IU9wMYDxiziHs+jolwD+z1WWTiTSqSdOeq63YUHzKs7n
+ydle3bsrhT61nbXZ4Vf/vrTFfvXPDJ7wl/4r0ztSGxs4J/c/SjGCAWwwggFoAgEB
+MGcwUzELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMSswKQYD
+VQQDEyJWZXJpU2lnbiBUaW1lIFN0YW1waW5nIFNlcnZpY2VzIENBAhA4Jdf6+GGv
+nvSQ5ya11lrVMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcB
+MBwGCSqGSIb3DQEJBTEPFw0xMTEwMjQwNDU2NTZaMCMGCSqGSIb3DQEJBDEWBBR3
+QvltUGOrl0gO1TYlaM7Ta36UxjANBgkqhkiG9w0BAQEFAASBgMJd8KBkn75UBEXo
+x/H14m473mymbjvPZzaG3QCVfmjKsLsSgWy1meeuFGbGCHcUE2yNQE/ohBxbKUiN
+LBhGVUeEtVjuX7GVhi5KjPJ5InQdYHPRo74N430LbsAugv0lBj5LuwRIlqLnNRkm
+2LrI1GoQCRbMrG8e432Ur90jUYFm
+</as:Timestamp></Object></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Help version="1.0">
+  <TopicGroup name="frmMain" context="Empty" count="1">
+    <Topic index="0">https://iancrane.github.io/soteriapassword.com/m/getting-started.html</Topic>
+  </TopicGroup>
+  <TopicGroup name="frmMain" context="General" count="7">
+    <Topic index="0">https://iancrane.github.io/soteriapassword.com/m/super-fast.html</Topic>
+    <Topic index="1">https://iancrane.github.io/soteriapassword.com/m/auto-copy-password.html</Topic>
+    <Topic index="2">https://iancrane.github.io/soteriapassword.com/m/recommended-approach.html</Topic>
+    <Topic index="3">https://iancrane.github.io/soteriapassword.com/m/viewing-a-password.html</Topic>
+    <Topic index="4">https://iancrane.github.io/soteriapassword.com/m/faster-logins.html</Topic>
+    <Topic index="5">https://iancrane.github.io/soteriapassword.com/automatic-login.html</Topic>
+    <Topic index="6">https://iancrane.github.io/soteriapassword.com/m/hide-notes.html</Topic>
+  </TopicGroup>
+  <TopicGroup name="frmEditEntry" context="Create" count="1">
+    <Topic index="0">https://iancrane.github.io/soteriapassword.com/m/create-password.html</Topic>
+    <Topic index="1">https://iancrane.github.io/soteriapassword.com/m/create-password.html</Topic>
+  </TopicGroup>
+  <TopicGroup name="frmEditEntry" context="Edit" count="1">
+    <Topic index="0">https://iancrane.github.io/soteriapassword.com/m/edit-password.html</Topic>
+    <Topic index="1">https://iancrane.github.io/soteriapassword.com/m/edit-password.html</Topic>
+  </TopicGroup>
+  <TopicGroup name="frmGeneratePassword" context="General" count="5">
+    <Topic index="0">https://iancrane.github.io/soteriapassword.com/m/password-generator.html</Topic>
+    <Topic index="1">https://iancrane.github.io/soteriapassword.com/m/recommended-approach.html</Topic>
+    <Topic index="2">https://iancrane.github.io/soteriapassword.com/m/password-strength.html</Topic>
+    <Topic index="3">https://iancrane.github.io/soteriapassword.com/m/special-character-presets.html</Topic>
+    <Topic index="4">https://iancrane.github.io/soteriapassword.com/m/roll-your-own.html</Topic>
+  </TopicGroup>
+</Help>
