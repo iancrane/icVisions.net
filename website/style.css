@@ -81,7 +81,6 @@ h3#reply-title,
 .form-allowed-tags,
 #site-info,
 #site-title,
-#wp-calendar,
 .calendar_wrap,
 .comment-meta,
 .comment-body tr th,
@@ -89,9 +88,7 @@ h3#reply-title,
 .entry-content label,
 .entry-content tr th,
 .entry-content thead th,
-.entry-meta,
 .entry-title,
-.entry-utility,
 #respond label,
 .navigation,
 .page-title,
@@ -109,7 +106,6 @@ pre {
 code {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
-
 
 /* =Structure
 -------------------------------------------------------------- */
@@ -135,18 +131,6 @@ code {
 	padding: 0 20px;
 }
 
-/* Structure the footer area */
-#footer-widget-area {
-	overflow: hidden;
-}
-#footer-widget-area .widget-area {
-	float: left;
-	margin-right: 20px;
-	width: 220px;
-}
-#footer-widget-area #fourth {
-	margin-right: 0;
-}
 #site-info {
 	float: left;
 	font-size: 14px;
@@ -523,18 +507,6 @@ a:hover {
 .entry-title a:hover {
 	color: #ff4b33;
 }
-.entry-meta {
-	color: #777;
-	font-size: 12px;
-}
-.entry-meta abbr,
-.entry-utility abbr {
-	border: none;
-}
-.entry-meta abbr:hover,
-.entry-utility abbr:hover {
-	border-bottom: 1px dotted #666;
-}
 .entry-content,
 .entry-summary {
 	clear: both;
@@ -601,57 +573,6 @@ body.page .edit-link {
 	clear: both;
 	display: block;
 }
-#entry-author-info {
-	background: #f2f7fc;
-	border-top: 4px solid #000;
-	clear: both;
-	font-size: 14px;
-	line-height: 20px;
-	margin: 24px 0;
-	overflow: hidden;
-	padding: 18px 20px;
-}
-#entry-author-info #author-avatar {
-	background: #fff;
-	border: 1px solid #e7e7e7;
-	float: left;
-	height: 60px;
-	margin: 0 -104px 0 0;
-	padding: 11px;
-}
-#entry-author-info #author-description {
-	float: left;
-	margin: 0 0 0 104px;
-}
-#entry-author-info h2 {
-	color: #000;
-	font-size: 100%;
-	font-weight: bold;
-	margin-bottom: 0;
-}
-.entry-utility {
-	clear: both;
-	color: #777;
-	font-size: 12px;
-	line-height: 18px;
-}
-.entry-meta a,
-.entry-utility a {
-	color: #777;
-}
-.entry-meta a:hover,
-.entry-utility a:hover {
-	color: #ff4b33;
-}
-#content .video-player {
-	padding: 0;
-}
-.format-standard .wp-video,
-.format-standard .wp-audio-shortcode,
-.format-audio .wp-audio-shortcode,
-.format-standard .video-player {
-	margin-bottom: 24px;
-}
 
 /* =Navigation
 -------------------------------------------------------------- */
@@ -694,152 +615,6 @@ body.page .edit-link {
 	margin: -18px 0 0 0;
 }
 
-/* =Widget Areas
--------------------------------------------------------------- */
-
-.widget-area ul {
-	list-style: none;
-	margin-left: 0;
-}
-.widget-area ul ul {
-	list-style: square;
-	margin-left: 1.3em;
-}
-.widget-area select {
-	max-width: 100%;
-}
-.widget_search #s {/* This keeps the search inputs in line */
-	width: 60%;
-}
-.widget_search label {
-	display: none;
-}
-.widget-container {
-	word-wrap: break-word;
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
-	margin: 0 0 18px 0;
-}
-.widget-container .wp-caption img {
-	margin: auto;
-}
-.widget-title {
-	color: #222;
-	font-weight: bold;
-}
-.widget-area a:link,
-.widget-area a:visited {
-	text-decoration: none;
-}
-.widget-area a:active,
-.widget-area a:hover {
-	text-decoration: underline;
-}
-.widget-area .entry-meta {
-	font-size: 11px;
-}
-#wp_tag_cloud div {
-	line-height: 1.6em;
-}
-#wp-calendar {
-	width: 100%;
-}
-#wp-calendar caption {
-	color: #222;
-	font-size: 14px;
-	font-weight: bold;
-	padding-bottom: 4px;
-	text-align: left;
-}
-#wp-calendar thead {
-	font-size: 11px;
-}
-#wp-calendar tbody {
-	color: #aaa;
-}
-#wp-calendar tbody td {
-	background: #f5f5f5;
-	border: 1px solid #fff;
-	padding: 3px 0 2px;
-	text-align: center;
-}
-#wp-calendar tbody .pad {
-	background: none;
-}
-.wp-calendar-nav {
-	display: table;
-	width: 100%;
-}
-.wp-calendar-nav span {
-	display: table-cell;
-}
-.wp-calendar-nav-next,
-#wp-calendar tfoot #next {
-	text-align: right;
-}
-.widget_rss a.rsswidget {
-	color: #000;
-}
-.widget_rss a.rsswidget:hover {
-	color: #ff4b33;
-}
-.widget_rss .widget-title img {
-	width: 11px;
-	height: 11px;
-}
-.widget_text ul,
-.widget_text ol {
-	margin-bottom: 1.5em;
-}
-.widget_text ol {
-	margin-left: 1.3em;
-}
-.widget_text ul ul,
-.widget_text ol ol,
-.widget_text ul ol,
-.widget_text ol ul {
-	margin-bottom: 0;
-}
-.widget_media_video video {
-	max-width: 100%;
-}
-.tagcloud ul {
-	list-style-type: none;
-	margin-left: 0 !important;
-}
-.tagcloud ul li {
-	display: inline-block;
-}
-
-/* Helps galleries in widget areas look presentable in most cases. */
-.widget-area .gallery-columns-2 img,
-.widget-area .gallery-columns-3 img,
-.widget-area .gallery-columns-4 img,
-.widget-area .gallery-columns-5 img,
-.widget-area .gallery-columns-6 img,
-.widget-area .gallery-columns-7 img,
-.widget-area .gallery-columns-8 img,
-.widget-area .gallery-columns-9 img {
-	border: none;
-	max-width: 90%;
-	width: auto;
-}
-
-/* Main sidebars */
-#main .widget-area ul {
-	margin-left: 0;
-	padding: 0 20px 0 0;
-}
-#main .widget-area ul ul {
-	border: none;
-	margin-left: 1.3em;
-	padding: 0;
-}
-
-#main .widget-area ul.wp-block-latest-posts.wp-block-latest-posts__list {
-	list-style: square;
-}
 
 /* =Footer
 -------------------------------------------------------------- */
@@ -879,7 +654,6 @@ code {
 }
 #access,
 .entry-meta,
-.entry-utility,
 .navigation,
 .widget-area {
 	-webkit-text-size-adjust: 120%;
