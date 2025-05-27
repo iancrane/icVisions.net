@@ -143,6 +143,9 @@ code {
 -------------------------------------------------------------- */
 
 /* Main global 'theme' and typographic styles */
+.background {
+	background: url('images/bg-light-gray.jpg');
+}
 body,
 input,
 textarea {
