@@ -532,6 +532,9 @@ a:hover {
 	font-weight: bold;
 	padding: 0 24px;
 }
+.entry-content p img {
+	padding: 0 6px 0 0;
+}
 .entry-content input {
 	margin: 0 0 24px 0;
 }
