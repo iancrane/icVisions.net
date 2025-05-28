@@ -123,6 +123,9 @@ img {
 	margin: 6px 0 6px 6px;
 	padding-right: 4px;
 }
+#access div.menu li.nav-page:hover {
+	background-color: #666;
+}
 #access div.menu li.nav-page {
 	background-color: #777;
 }
