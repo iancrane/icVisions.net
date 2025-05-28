@@ -89,22 +89,22 @@ img {
 	text-decoration: none;
 }
 #access .nav-page > a {
-	background-color: #666;
 	font-weight: normal;
 }
 #access a:hover {
 	color: #8ef
 }
 #access .nav-page-current > a {
-	background-color: #444;
 	font-weight: bold;
 }
 #access div.menu {
 	background-color: #aaa;
-	border: 1px solid #888;
+	border-top: 2px solid #ddd;
+	border-right: 2px solid #ddd;
+	border-bottom: 2px solid #777;
+	border-left: 2px solid #777;
 	display: inline-block;
 	font-size: 16px;
-	margin: 0 auto;
 	vertical-align: middle;
 	width: 940px;
 }
@@ -113,10 +113,24 @@ img {
 	margin: 0;
 }
 #access div.menu li {
-	float: left;
-	position: relative;
+	border-radius: 8px;
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
 	border-bottom: 1px solid #333;
 	border-left: 1px solid #333;
+	float: left;
+	position: relative;
+	margin: 6px 0 6px 6px;
+	padding-right: 4px;
+}
+#access div.menu li.nav-page {
+	background-color: #777;
+}
+#access div.menu li.nav-page-current {
+	background-color: #555;
+}
+#access div.menu li img {
+	margin-right: 4px;
 }
 
 /* Content
