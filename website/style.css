@@ -22,7 +22,7 @@ a {
 	text-decoration: none;
 }
 a:hover {
-	color: #00c;
+	color: blue;
 }
 body {
 	margin: 0 40px;
@@ -47,19 +47,18 @@ img {
 
 /* ID selectors
 -------------------------------------------------------------- */
-#colophon,#branding,#main,#wrapper {
-	margin: 0 auto;
-	width: 940px;
+#header, #main, #footer {
+	width: 100%;
 }
-#header {
-	padding: 30px 0 0 0;
+#branding {
+	height: 80px;
+	line-height: 80px;
 }
 #site-title {
 	float: left;
 	font-size: 30px;
-	line-height: 36px;
-	margin: 0 0 18px 0;
-	width: 700px;
+	margin: 0px;
+	vertical-align: middle;
 }
 #site-title a {
 	font-weight: bold;
@@ -70,7 +69,7 @@ img {
 	float: right;
 	font-family: Georgia, "Bitstream Charter", serif;
 	font-style: italic;
-	margin: 15px 0 18px 0;
+	vertical-align: middle;
 	-webkit-text-size-adjust: none;
 }
 
@@ -79,7 +78,7 @@ img {
 #access {
 	display: block;
 	margin: 0 auto;
-	width: 940px;
+	width: 100%;
 }
 #access a {
 	color: #fff;
@@ -92,7 +91,7 @@ img {
 	font-weight: normal;
 }
 #access a:hover {
-	color: #8ef
+	color: #8ef;
 }
 #access .nav-page-current > a {
 	font-weight: bold;
@@ -106,7 +105,7 @@ img {
 	display: inline-block;
 	font-size: 16px;
 	vertical-align: middle;
-	width: 940px;
+	width: 100%;
 }
 #access div.menu ul {
 	list-style: none;
@@ -183,12 +182,11 @@ img {
 /* Footer
 -------------------------------------------------------------- */
 #footer {
+	border-top: 2px solid #000;
 	clear: both;
 	width: 100%;
-	margin-bottom: 20px;
 }
 #colophon {
-	border-top: 2px solid #000;
 	overflow: hidden;
 	padding: 10px 0;
 }
