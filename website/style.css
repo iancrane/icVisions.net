@@ -98,10 +98,11 @@ img {
 }
 #access div.menu {
 	background-color: #aaa;
-	border-top: 2px solid #ddd;
-	border-right: 2px solid #ddd;
-	border-bottom: 2px solid #777;
-	border-left: 2px solid #777;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #777;
+	border-left: 1px solid #777;
+	border-radius: 8px;
 	display: inline-block;
 	font-size: 16px;
 	vertical-align: middle;
@@ -110,6 +111,7 @@ img {
 #access div.menu ul {
 	list-style: none;
 	margin: 0;
+	padding-right: 8px;
 }
 #access div.menu li {
 	border-radius: 8px;
@@ -119,7 +121,7 @@ img {
 	border-left: 1px solid #333;
 	float: left;
 	position: relative;
-	margin: 6px 0 6px 6px;
+	margin: 8px 0 8px 8px;
 	padding-right: 4px;
 }
 #access div.menu li.nav-page:hover {
