@@ -11,9 +11,6 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 	padding: 0;
 	vertical-align: baseline;
 }
-pre {
-	font-family: "Courier 10 Pitch", Courier, monospace;
-}
 code {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
