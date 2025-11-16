@@ -41,6 +41,16 @@ img {
 .background {
 	background: url('images/bg-light-gray.jpg');
 }
+.last-updated {
+    color: #666;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.last-updated time {   
+    color: #555;
+    font-style: italic;
+    font-weight: normal;
+}
 
 /* ID selectors
 -------------------------------------------------------------- */
