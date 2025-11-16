@@ -28,7 +28,14 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	margin: 20px 0 5px 0;
+}
+h1 {
+    font-size: 1.6em;
+    margin: 25px 0 5px 0;
+}
+h2 {
+    font-size: 1.4em;
+    margin: 15px 0 5px 0;
 }
 img {
 	background: transparent;
@@ -58,12 +65,10 @@ img {
 	width: 100%;
 }
 #branding {
-	height: 80px;
-	line-height: 80px;
+	line-height: 40px;
 }
 #site-title {
 	float: left;
-	font-size: 30px;
 	margin: 0px;
 	vertical-align: middle;
 }
@@ -173,15 +178,13 @@ img {
 #content ol ul {
 	margin-bottom: 0;
 }
-
-#content .entry-title {
-	font-size: 21px;
-	line-height: 1.3em;
+#content li {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .entry-content {
 	clear: both;
-	padding: 10px 0 0 0;
 }
 .entry-content p img {
 	padding: 0 6px 0 0;
