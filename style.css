@@ -42,7 +42,24 @@ img {
 	border: none;
 	vertical-align: middle;
 }
-
+table {
+    border: 1px solid #777;
+    border-collapse: collapse;
+    margin: 15px 0px;
+    width: 100%;
+}
+tr {
+    background-color: #fff;
+}
+td, th {
+    border: 1px solid #777;
+    padding: 4px 8px;
+    text-align: left;
+}
+th {
+    background-color: #ddd;
+    font-weight: bold;
+}
 /* General classes
 -------------------------------------------------------------- */
 .background {
