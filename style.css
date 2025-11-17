@@ -42,6 +42,12 @@ img {
 	border: none;
 	vertical-align: middle;
 }
+ol li ol li {
+    list-style-type: lower-alpha;
+}
+ol li ol li ol li {
+    list-style-type: lower-roman;
+}
 table {
     border: 1px solid #777;
     border-collapse: collapse;
