@@ -2,7 +2,7 @@
 
 /* Defaults for HTML tags to override user-agent settings
 -------------------------------------------------------------- */
-body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+body, div, h1, h2, h3, h4, h5, h6, p {
 	color: #222;
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 	background: transparent;
@@ -10,9 +10,6 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 	margin: 0;
 	padding: 0;
 	vertical-align: baseline;
-}
-code {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 a {
 	color: inherit;
@@ -22,7 +19,12 @@ a:hover {
 	color: blue;
 }
 body {
-	margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+code {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
@@ -47,6 +49,13 @@ img {
 	background: transparent;
 	border: none;
 	vertical-align: middle;
+}
+ul, ol {
+    padding-inline-start: 10px;
+    margin: 0;
+}
+li {
+    margin: 5px 10px 5px 20px;
 }
 ol li ol li {
     list-style-type: lower-alpha;
@@ -99,20 +108,18 @@ th {
 /* ID selectors for main page layout
 -------------------------------------------------------------- */
 #header, #main, #footer {
-	width: 100%;
+    padding: 10px 30px;
 }
 
 /* Branding (top section of each page)
 -------------------------------------------------------------- */
 #branding {
     display: flex;
-    height: 60px;
     align-items: center;
+    height: 60px;
     font-family: Georgia, "Bitstream Charter", serif;
 }
 #site-title {
-	margin-right: auto;
-	font-family: inherit;
     font-size: 2em;
 	font-weight: bold;
 }
@@ -161,7 +168,7 @@ th {
 #access div.menu ul {
 	list-style: none;
 	margin: 0;
-	padding-right: 8px;
+	padding: 0;
 }
 #access div.menu li {
 	border-radius: 8px;
@@ -191,6 +198,7 @@ th {
 -------------------------------------------------------------- */
 #main {
 	clear: both;
+    flex-grow: 1;
 }
 #container {
     display: flex;
@@ -215,9 +223,6 @@ th {
 #content ol ul {
 	margin-bottom: 0;
 }
-#content li {
-    margin: 5px 10px 5px 20px;
-}
 
 .entry-content {
 	clear: both;
@@ -229,16 +234,25 @@ th {
 /* Footer
 -------------------------------------------------------------- */
 #footer {
-	border-top: 2px solid #000;
+    background-color: rgba(170, 170, 170, 0.8);
+    border-top: 1px solid #666;
 	clear: both;
-	width: 100%;
+}
+#footer ul {
+    font-weight: bold;
+    list-style-type: none;
+}
+#footer li {
+    font-size: 0.8em;
+    font-weight: normal;
 }
 #colophon {
+    display: flex;
+    align-items: center;
 	overflow: hidden;
 	padding: 10px 0;
 }
 #site-info {
-	float: left;
 	font-size: 0.8em;
 	font-weight: bold;
 }
