@@ -191,16 +191,16 @@ th {
 -------------------------------------------------------------- */
 #main {
 	clear: both;
-	overflow: hidden;
 }
 #container {
-	float: left;
-	margin: 0 0 0 0;
-	width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
 }
 #content {
-    margin: 20px 8px;
-	padding: 10px 40px 20px 40px;
+    margin: 20px 10px;
+	padding: 10px 40px 30px 40px;
 }
 #content ul,
 #content ol,
@@ -255,4 +255,5 @@ th {
     background-color: rgba(255, 255, 255, 0.8);
     outline: 4px ridge #aaa;
     border-radius: 10px;
+    max-width: 800px;
 }
