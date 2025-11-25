@@ -3,7 +3,6 @@
 /* Defaults for HTML tags to override user-agent settings
 -------------------------------------------------------------- */
 body, div, h1, h2, h3, h4, h5, h6, p {
-	color: #222;
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 	background: transparent;
 	border: 0;
@@ -124,8 +123,6 @@ th {
 #branding {
     display: flex;
     align-items: center;
-    height: 60px;
-    font-family: Georgia, "Bitstream Charter", serif;
 }
 #site-title {
     font-size: 2em;
@@ -133,34 +130,83 @@ th {
 }
 
 #site-description {
-	margin-left: auto;
     font-size: 1em;
 	font-style: italic;
+	margin-left: auto;
+    white-space: nowrap;
 }
 
 /* Site navigation menu
 -------------------------------------------------------------- */
 #access {
-	display: block;
-	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 	width: 100%;
 }
 #access a {
-	color: #fff;
-	display: block;
-	line-height: 50px;
-	padding: 0 10px;
-	text-decoration: none;
-}
-#access .nav-page > a {
-	font-weight: normal;
+    display: block;
+    line-height: 40px;
+    white-space: nowrap;
 }
 #access a:hover {
 	color: #8ef;
 }
-#access .nav-page-current > a {
-	font-weight: bold;
+#access a img {
+    margin-right: 6px;
 }
+#access ul {
+    background-color: #aaa;
+    list-style: none;
+    padding-left: 0;
+}
+#access li {
+	border-radius: 2px;
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #333;
+	border-right: 1px solid #333;
+    background: darkorange;
+    display: block;
+    float: left;
+    margin: 0px;
+    padding: 0px 6px;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#access li:hover,
+#access li:focus-within {
+  background: navy;
+  cursor: pointer;
+}
+#access ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  left: 0;
+  display: none;
+  margin-top: 1px;
+}
+
+#access ul li:hover > ul,
+#access ul li:focus-within > ul,
+#access ul li ul:hover,
+#access ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+#access ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+
+
 #access div.menu {
 	background-color: #aaa;
 	border-top: 1px solid #ddd;
