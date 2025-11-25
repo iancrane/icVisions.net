@@ -45,6 +45,14 @@ h4 {
     font-size: 1.2em;
     margin: 12px 0 4px 0;
 }
+h5 {
+    font-size: 1em;
+    margin: 8px 0 4px 0;
+}
+h6 {
+    font-size: 0.8em;
+    margin-bottom: 8px;
+}
 img {
 	background: transparent;
 	border: none;
@@ -107,7 +115,7 @@ th {
 
 /* ID selectors for main page layout
 -------------------------------------------------------------- */
-#header, #main, #footer {
+#header, #main {
     padding: 10px 30px;
 }
 
@@ -234,27 +242,33 @@ th {
 /* Footer
 -------------------------------------------------------------- */
 #footer {
-    background-color: rgba(170, 170, 170, 0.8);
+    background-color: rgba(170, 170, 170, 0.9);
     border-top: 1px solid #666;
 	clear: both;
+    display: flex;
+    padding: 10px 8px;
 }
 #footer ul {
+    color: #444;
+    font-size: 0.8em;
     font-weight: bold;
     list-style-type: none;
 }
 #footer li {
-    font-size: 0.8em;
     font-weight: normal;
+    margin: 5px 10px;
 }
-#colophon {
-    display: flex;
-    align-items: center;
-	overflow: hidden;
-	padding: 10px 0;
+#footer .policies {
+    margin-right: auto;
 }
 #site-info {
 	font-size: 0.8em;
 	font-weight: bold;
+}
+#copyright {
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 10px;
 }
 
 /* IceBerg pages
