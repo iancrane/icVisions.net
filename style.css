@@ -115,7 +115,7 @@ th {
 /* ID selectors for main page layout
 -------------------------------------------------------------- */
 #header, #main {
-    padding: 10px 30px;
+    padding: 10px;
 }
 
 /* Branding (top section of each page)
@@ -127,8 +127,9 @@ th {
 #site-title {
     font-size: 2em;
 	font-weight: bold;
+    margin-left: 20px;
+    white-space: nowrap;
 }
-
 #site-description {
     font-size: 1em;
 	font-style: italic;
@@ -138,24 +139,15 @@ th {
 
 /* Site navigation menu
 -------------------------------------------------------------- */
-#access {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-}
+
 #access a {
     display: block;
-    line-height: 40px;
     white-space: nowrap;
-}
-#access a:hover {
-	color: #8ef;
 }
 #access a img {
     margin-right: 6px;
 }
 #access ul {
-    background-color: #aaa;
     list-style: none;
     padding-left: 0;
 }
@@ -165,9 +157,10 @@ th {
 	border-left: 1px solid #999;
 	border-bottom: 1px solid #333;
 	border-right: 1px solid #333;
-    background: darkorange;
+    background-color: #eee;
     display: block;
     float: left;
+    line-height: 40px;
     margin: 0px;
     padding: 0px 6px;
     position: relative;
@@ -176,11 +169,11 @@ th {
 }
 #access li:hover,
 #access li:focus-within {
-  background: navy;
+  background: rgb(172, 243, 255);
   cursor: pointer;
 }
 #access ul li ul {
-  background: orange;
+  background: transparent;
   visibility: hidden;
   opacity: 0;
   min-width: 5rem;
@@ -188,9 +181,7 @@ th {
   transition: all 0.5s ease;
   left: 0;
   display: none;
-  margin-top: 1px;
 }
-
 #access ul li:hover > ul,
 #access ul li:focus-within > ul,
 #access ul li ul:hover,
@@ -199,53 +190,15 @@ th {
    opacity: 1;
    display: block;
 }
-
 #access ul li ul li {
   clear: both;
   width: 100%;
 }
-
-
-
-#access div.menu {
-	background-color: #aaa;
-	border-top: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	border-bottom: 1px solid #777;
-	border-left: 1px solid #777;
-	border-radius: 8px;
-	display: inline-block;
-	font-size: 16px;
-	vertical-align: middle;
-	width: 100%;
-}
-#access div.menu ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-#access div.menu li {
-	border-radius: 8px;
-	border-top: 1px solid #999;
-	border-right: 1px solid #999;
-	border-bottom: 1px solid #333;
-	border-left: 1px solid #333;
-	float: left;
-	position: relative;
-	margin: 8px 0 8px 8px;
-	padding-right: 4px;
-}
-#access div.menu li.nav-page:hover {
-	background-color: #666;
-}
-#access div.menu li.nav-page {
-	background-color: #777;
-}
-#access div.menu li.nav-page-current {
-	background-color: #555;
-}
-#access div.menu li img {
-	margin-right: 4px;
+#access li.no-padding {
+    border-radius: 6px;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
 }
 
 /* Content
@@ -322,13 +275,12 @@ th {
 /* IceBerg pages
 -------------------------------------------------------------- */
 .iceberg-bg {
-	background: url('IceBerg/images/iceberg-icon-1920-trimmed.png') center top;
+	background: url('IceBerg/images/iceberg-icon-960.png') center no-repeat;
     background-attachment: fixed;
-    background-size: 90%;
 }
 
 .transparent-document-paper {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     outline: 4px ridge #aaa;
     border-radius: 10px;
     max-width: 800px;
