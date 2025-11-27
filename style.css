@@ -186,23 +186,22 @@ th {
     padding: 0px 6px;
     position: relative;
     text-decoration: none;
-    transition-duration: 0.5s;
-}
-#access li.current-menu-item {
-    background: rgb(220, 251, 255);
-    color:  #666;
-    font-weight: bold;
+    transition: all .4s ease;
 }
 #access li:hover,
 #access li:focus-within {
     background: rgb(172, 243, 255);
     cursor: pointer;
 }
+#access li.current-menu-item {
+    background: rgb(220, 251, 255);
+    color:  #666;
+    font-weight: bold;
+}
 #access ul li ul {
     visibility: hidden;
     opacity: 0;
     min-width: 5rem;
-    transition: all 0.5s ease;
     position: absolute;
     right: 0;
     left: auto;
@@ -213,9 +212,9 @@ th {
 #access ul li:focus-within > ul,
 #access ul li ul:hover,
 #access ul li ul:focus {
-   visibility: visible;
-   opacity: 1;
-   display: block;
+    visibility: visible;
+    opacity: 1;
+    display: block;
 }
 #access ul li ul li {
     background-color: #fff;
@@ -229,6 +228,7 @@ th {
     line-height: normal;
     padding: 0;
     margin: 0;
+    transition-duration: .1s;
 }
 
 /* Content
