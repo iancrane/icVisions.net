@@ -162,6 +162,9 @@ th {
     margin-right: auto;
     white-space: nowrap;
 }
+.logo-link:hover {
+    filter: invert(9%) sepia(94%) saturate(6958%) hue-rotate(247deg) brightness(90%) contrast(146%);
+}
 
 /* Site navigation menu
 -------------------------------------------------------------- */
@@ -244,6 +247,7 @@ th {
 }
 #content {
 	padding: 10px 40px 30px 40px;
+    max-width: 800px;
 }
 #content ul,
 #content ol,
@@ -271,20 +275,26 @@ th {
 #footer {
 	clear: both;
     display: flex;
-    padding: 10px 8px;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    padding: 8px 8px;
+}
+#footer summary {
+    cursor: pointer;
+    font-weight: bold;
 }
 #footer ul {
     color: #222;
-    font-size: 0.8em;
     font-weight: bold;
     list-style-type: none;
 }
 #footer li {
     font-weight: normal;
-    margin: 5px 10px;
+    margin: 3px 10px;
 }
 #footer .policies {
     margin-right: auto;
+    vertical-align: middle;
 }
 #site-info {
 	font-size: 0.8em;
@@ -292,10 +302,8 @@ th {
 }
 #copyright {
     display: inline-block;
-    font-size: 0.8em;
-    line-height: 1.4em;
     margin-left: 10px;
-    text-align: center;
+    text-align: right;
 }
 
 /* IceBerg pages
