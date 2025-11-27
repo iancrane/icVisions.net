@@ -97,7 +97,7 @@ th {
 /* General classes
 -------------------------------------------------------------- */
 .background {
-	background: url('images/bg-light-gray.jpg');
+    background-color: #eee;
 }
 .last-updated {
     color: #666;
