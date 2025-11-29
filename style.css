@@ -269,7 +269,12 @@ th {
 .entry-content p img {
 	padding: 0 6px 0 0;
 }
-
+.background-home {
+    background-image: url('main/images/home.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
 /* Footer
 -------------------------------------------------------------- */
 #footer {
