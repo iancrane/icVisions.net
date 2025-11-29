@@ -345,7 +345,7 @@ th {
 	background-image: url('main/images/paper-texture.jpg');
     background-attachment: scroll;
     background-position: center;
-    filter: opacity(35%);   /* Soften and lighten the background image */
+    filter: opacity(50%);   /* Soften and lighten the background image */
     z-index: -1;            /* Avoid applying the filter to child elements */
 }
 .subprocessor-card-header {
