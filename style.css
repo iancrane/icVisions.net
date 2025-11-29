@@ -131,6 +131,7 @@ th {
     padding: 10px;
     position: fixed;
     z-index: 1000;
+    box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.2);
 }
 #main {
     margin-top: 60px;   /* Compensate for fixed header */
@@ -284,6 +285,8 @@ th {
     font-size: 0.8em;
     line-height: 1.4em;
     padding: 8px 8px;
+    z-index: 1000;
+    box-shadow: 0px -2px 2px -1px rgba(0,0,0,0.2);
 }
 #footer summary {
     cursor: pointer;
@@ -326,6 +329,7 @@ th {
     border-radius: 8px;
     margin: 20px 0px;
     padding-bottom: 15px;
+    filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.3));
     /* These lines are required to make the ::before pseudo-element work */
     position: relative;
     z-index: 1; 
@@ -376,4 +380,5 @@ th {
     outline: 4px ridge #aaa;
     border-radius: 10px;
     max-width: 800px;
+    filter: drop-shadow(8px 8px 3px rgba(0,0,0,0.1));
 }
