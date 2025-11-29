@@ -75,7 +75,7 @@ li p {
     margin: 5px 0;
 }
 p {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 table {
     border: 1px solid #777;
@@ -98,7 +98,7 @@ th {
 /* General classes
 -------------------------------------------------------------- */
 .background {
-    background-color: #fff;
+    background-color: rgb(255, 254, 249); /* #eeffff; */
 }
 .centered {
     display: block;
@@ -130,6 +130,7 @@ th {
 #header{
     padding: 10px;
     position: fixed;
+    z-index: 1000;
 }
 #main {
     margin-top: 60px;   /* Compensate for fixed header */
@@ -317,7 +318,57 @@ th {
 	background: url('IceBerg/images/iceberg-icon-960.png') center no-repeat;
     background-attachment: fixed;
 }
-
+.subprocessor-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(244, 251, 255);
+    outline: 2px ridge #aaa;
+    border-radius: 8px;
+    margin: 20px 0px;
+    padding-bottom: 15px;
+    /* These lines are required to make the ::before pseudo-element work */
+    position: relative;
+    z-index: 1; 
+}
+.subprocessor-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	background-image: url('main/images/paper-texture.jpg');
+    background-attachment: scroll;
+    background-position: center;
+    filter: opacity(35%);   /* Soften and lighten the background image */
+    z-index: -1;            /* Avoid applying the filter to child elements */
+}
+.subprocessor-header {
+    align-items: center;
+    display: flex;
+    clear: both;
+    padding-bottom: 15px;
+    width: 100%;
+    background-image: linear-gradient(to right, transparent, #222, transparent);
+    background-repeat: no-repeat;
+    background-position: bottom center; /* Position at the bottom */
+    background-size: 100% 1px;
+}
+.subprocessor-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+.subprocessor-section {
+    margin: 15px 15px 0px 15px;
+}
+.subprocessor-label {
+    font-weight: bold;
+    margin: 0px 0px 5px 0px;
+}
+.subprocessor-value {
+    margin: 5px 0px 0px 0px;
+}
 .transparent-document-paper {
     background-color: rgba(255, 255, 255, 0.85);
     outline: 4px ridge #aaa;
