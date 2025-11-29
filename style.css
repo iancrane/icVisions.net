@@ -271,6 +271,9 @@ th {
 .icon-shadow {
     filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.2));
 }
+.big-shadow {
+    filter: drop-shadow(1px 10px 5px rgba(0,0,0,0.15));
+}
 .entry-content {
 	clear: both;
 }
