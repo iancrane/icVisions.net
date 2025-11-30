@@ -387,3 +387,7 @@ th {
     max-width: 800px;
     filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.4));
 }
+.transparent-document-paper a {
+    color: blue;
+    text-decoration: underline;
+}
