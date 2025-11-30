@@ -183,7 +183,8 @@ th {
     white-space: nowrap;
 }
 #access a img {
-    margin-right: 6px;
+    margin-right: 8px;
+    filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.2));
 }
 #access ul {
     list-style: none;
