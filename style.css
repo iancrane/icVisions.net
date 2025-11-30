@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+:root {
+  --icon-drop-shadow: drop-shadow(2px 2px 1px rgba(0,0,0,0.2));
+}
+
 /* Defaults for HTML tags to override user-agent settings
 -------------------------------------------------------------- */
 body, div, h1, h2, h3, h4, h5, h6, p {
@@ -184,7 +188,7 @@ th {
 }
 #access a img {
     margin-right: 8px;
-    filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.2));
+    filter: var(--icon-drop-shadow)
 }
 #access ul {
     list-style: none;
@@ -270,7 +274,7 @@ th {
 }
 
 .icon-shadow {
-    filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.2));
+    filter: var(--icon-drop-shadow);
 }
 .big-shadow {
     filter: drop-shadow(1px 10px 5px rgba(0,0,0,0.15));
