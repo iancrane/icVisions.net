@@ -320,7 +320,7 @@ th {
 /* IceBerg pages
 -------------------------------------------------------------- */
 .iceberg-bg {
-	background: url('IceBerg/images/iceberg-icon-960.png') center no-repeat;
+	background: url('IceBerg/images/iceberg-icon-960.png') top 100px center no-repeat;
     background-attachment: fixed;
 }
 .subprocessor-card {
