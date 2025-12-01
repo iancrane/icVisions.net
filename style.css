@@ -1,7 +1,10 @@
 @charset "utf-8";
 
 :root {
-  --icon-drop-shadow: drop-shadow(2px 2px 1px rgba(0,0,0,0.2));
+    --background-color: rgb(255, 254, 249);
+    --icon-drop-shadow: drop-shadow(2px 2px 1px rgba(0,0,0,0.2));
+    --card-drop-shadow: drop-shadow(3px 3px 2px rgba(0,0,0,0.1));
+    --gradient-separator: linear-gradient(to right, rgba(32, 32, 32, 0.15), rgba(32, 32, 32, 0.4), rgba(32, 32, 32, 0.15));
 }
 
 /* Defaults for HTML tags to override user-agent settings
@@ -69,6 +72,28 @@ ul, ol {
 li {
     margin: 5px 10px 5px 20px;
 }
+ul.horizontal {
+    list-style-type: none;
+    position: relative;
+}
+ul.horizontal li {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    padding-left: 30px;
+}
+ul.horizontal li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('main/images/star.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 ol li ol li {
     list-style-type: lower-alpha;
 }
@@ -110,6 +135,18 @@ th {
     margin-right: auto;
     text-align: center;
 }
+.gradient-separator-top,
+.gradient-separator-bottom {
+    background-image: var(--gradient-separator);
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+}
+.gradient-separator-top {
+    background-position: top center;
+}
+.gradient-separator-bottom {
+    background-position: bottom center;
+}
 .hidden-anchor {
     display: block;
     position: relative;
@@ -143,7 +180,7 @@ th {
 }
 #header{
     position: fixed;
-    box-shadow: 0px -1px 5px rgba(0,0,0,0.85);
+    background-image: var(--gradient-separator);
 }
 #main {
     margin-top: 60px;   /* Compensate for fixed header */
@@ -154,7 +191,6 @@ th {
     display: flex;
     font-size: 0.8em;
     line-height: 1.4em;
-    box-shadow: 0px 1px 5px rgba(0,0,0,0.85);
 }
 /* Branding (top section of each page)
 -------------------------------------------------------------- */
@@ -188,7 +224,7 @@ th {
 }
 #access a img {
     margin-right: 8px;
-    filter: var(--icon-drop-shadow)
+    /* filter: var(--icon-drop-shadow) */
 }
 #access ul {
     list-style: none;
@@ -203,17 +239,17 @@ th {
     padding: 0px 6px;
     position: relative;
     text-decoration: none;
-    transition: all .4s ease;
+    transition: all .1s ease;
 }
 #access li:hover,
 #access li:focus-within {
-    background: rgb(172, 243, 255);
+    background: #f6f6f6;
     cursor: pointer;
+    text-decoration: underline;
 }
 #access li.current-menu-item {
-    background: rgb(220, 251, 255);
-    color:  #666;
-    font-weight: bold;
+    background-color: #eee;
+    color:  #333;
 }
 #access ul li ul {
     visibility: hidden;
@@ -234,7 +270,7 @@ th {
     display: block;
 }
 #access ul li ul li {
-    background-color: #fff;
+    background-color: var(--background-color);
     border-bottom: #aaa 1px solid;
     border-right: #aaa 1px solid;
     box-sizing: border-box;
@@ -252,6 +288,7 @@ th {
 -------------------------------------------------------------- */
 #container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
@@ -279,11 +316,82 @@ th {
 .big-shadow {
     filter: drop-shadow(1px 10px 5px rgba(0,0,0,0.25));
 }
-.entry-content {
+.content-section,
+.content-section-left-justified {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin: 10px 0px;
 	clear: both;
+    width: 100%;
 }
-.entry-content p img {
+.content-section {
+    justify-content: center;
+}
+.content-section-left-justified {
+    justify-content: flex-start;
+}
+.content-section p img,
+.content-section-left-justified p img {
 	padding: 0 6px 0 0;
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(247, 251, 253, 0.8);
+    outline: 1px ridge #aaa;
+    border-radius: 5px;
+    margin: 40px 20px 10px 20px;
+    max-width: 400px;
+    padding-bottom: 15px;
+    filter: var(--card-drop-shadow);
+    /* These lines are required to make the ::before pseudo-element work */
+    position: relative;
+    z-index: 1; 
+}
+.product-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	background-image: url('main/images/paper-texture.jpg');
+    background-attachment: scroll;
+    background-position: center;
+    filter: opacity(50%);   /* Soften and lighten the background image */
+    z-index: -1;            /* Avoid applying the filter to child elements */
+}
+.product-card-header {
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: var(--gradient-separator);
+    background-repeat: no-repeat;
+    background-position: bottom center; /* Position at the bottom */
+    background-size: 100% 1px;
+}
+.product-branding {
+    align-items: center;
+    display: flex;
+    clear: both;
+    padding-bottom: 17px;
+    width: 100%;
+}
+.product-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0px 10px 0px 15px;
+}
+.product-section {
+    margin: 15px 15px 0px 15px;
+}
+.product-label {
+    font-weight: bold;
+    line-height: 1.4em;
+    margin: 0px 0px 3px 0px;
+}
+.product-value {
+    line-height: 1.2em;
+    margin: 3px 0px 0px 0px;
 }
 .background-home {
     background-image: url('main/images/home.svg');
@@ -331,11 +439,11 @@ th {
     display: flex;
     flex-direction: column;
     background-color: rgba(247, 251, 253, 0.8);
-    outline: 2px ridge #aaa;
+    outline: 1px ridge #aaa;
     border-radius: 5px;
     margin: 40px 0px 10px 0px;
     padding-bottom: 15px;
-    filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.3));
+    filter: var(--card-drop-shadow);
     /* These lines are required to make the ::before pseudo-element work */
     position: relative;
     z-index: 1; 
@@ -355,10 +463,6 @@ th {
 }
 .subprocessor-card-header {
     background-color: rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to right, rgba(32, 32, 32, 0.2), rgba(32, 32, 32, 0.4), rgba(32, 32, 32, 0.2));
-    background-repeat: no-repeat;
-    background-position: bottom center; /* Position at the bottom */
-    background-size: 100% 1px;
 }
 .subprocessor-branding {
     align-items: center;
@@ -386,10 +490,10 @@ th {
 }
 .transparent-document-paper {
     background-color: rgba(255, 255, 255, 0.95);
-    outline: 3px ridge #aaa;
-    border-radius: 5px;
+    outline: 1px ridge #aaa;
+    border-radius: 2px;
     max-width: 800px;
-    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.4));
+    filter: var(--card-drop-shadow);
 }
 .transparent-document-paper a {
     color: blue;
