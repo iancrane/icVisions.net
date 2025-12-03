@@ -443,6 +443,9 @@ th {
 	background: url('IceBerg/images/iceberg-icon-960.png') top 100px center no-repeat;
     background-attachment: fixed;
 }
+.disclosure-bg {
+    background-color: #f6f6f6;
+}
 .subprocessor-card {
     background-color: rgba(247, 251, 253, 0.8);
     margin: 40px 0px 10px 0px;
