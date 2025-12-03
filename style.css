@@ -2,7 +2,7 @@
 
 :root {
     --icon-drop-shadow: drop-shadow(2px 2px 1px rgba(0,0,0,0.2));
-    --card-drop-shadow: drop-shadow(3px 3px 2px rgba(0,0,0,0.1));
+    --card-drop-shadow: drop-shadow(1px 1px 2px rgba(0,0,0,0.2));
     --gradient-separator: linear-gradient(to right, rgba(32, 32, 32, 0.1), rgba(32, 32, 32, 0.3), rgba(32, 32, 32, 0.1));
     --menu-separator: linear-gradient(to right, rgba(32, 32, 32, 0.025), rgba(32, 32, 32, 0.1), rgba(32, 32, 32, 0.025));
     --menu-border-color: rgba(0,0,0,0.5);
@@ -353,14 +353,9 @@ th {
 	padding: 0 6px 0 0;
 }
 .product-card {
-    display: flex;
-    flex-direction: column;
-    outline: 1px ridge #ccc;
-    border-radius: 5px;
     margin: 40px 20px 10px 20px;
     max-width: 400px;
     padding-bottom: 15px;
-    filter: var(--card-drop-shadow);
     /* These lines are required to make the ::before pseudo-element work */
     position: relative;
     z-index: 1; 
@@ -452,14 +447,9 @@ th {
     background-attachment: fixed;
 }
 .subprocessor-card {
-    display: flex;
-    flex-direction: column;
     background-color: rgba(247, 251, 253, 0.8);
-    outline: 1px ridge #aaa;
-    border-radius: 5px;
     margin: 40px 0px 10px 0px;
     padding-bottom: 15px;
-    filter: var(--card-drop-shadow);
     /* These lines are required to make the ::before pseudo-element work */
     position: relative;
     z-index: 1; 
@@ -506,12 +496,26 @@ th {
 }
 .transparent-document-paper {
     background-color: rgba(255, 255, 255, 0.95);
-    outline: 1px ridge #aaa;
     border-radius: 2px;
     max-width: 800px;
-    filter: var(--card-drop-shadow);
 }
 .transparent-document-paper a {
     color: blue;
     text-decoration: underline;
+}
+
+.product-card,
+.subprocessor-card {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.product-card,
+.subprocessor-card,
+.transparent-document-paper {
+    border-top: #ccc 1px solid;
+    border-left: #ccc 1px solid;
+    border-right: #aaa 1px solid;
+    border-bottom: #aaa 1px solid;
+    filter: var(--card-drop-shadow);
 }
