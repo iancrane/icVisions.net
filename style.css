@@ -412,7 +412,6 @@ th {
 -------------------------------------------------------------- */
 #footer summary {
     cursor: pointer;
-    font-weight: bold;
 }
 #footer ul {
     color: #222;
@@ -427,9 +426,9 @@ th {
     margin-right: auto;
     vertical-align: middle;
 }
-#site-info {
-	font-size: 0.8em;
-	font-weight: bold;
+#legal-disclosures-list {
+    font-size: 80%;
+    line-height: 1.4em;
 }
 #copyright {
     display: inline-block;
