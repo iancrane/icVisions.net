@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     font-size: 2em;
-    margin: 25px 0 6px 0;
+    margin: 20px 0 6px 0;
 }
 h2 {
     font-size: 1.6em;
@@ -307,7 +307,6 @@ th {
     width: 100%;
 }
 #content {
-	padding: 10px 40px 30px 40px;
     max-width: 800px;
 }
 #content ul,
@@ -514,5 +513,4 @@ th {
     border-left: #ccc 1px solid;
     border-right: #aaa 1px solid;
     border-bottom: #aaa 1px solid;
-    filter: var(--drop-shadow);
 }

@@ -3,4 +3,12 @@
 #main {
     padding: 20px;
 }
+#content {
+	padding: 40px 80px;
+}
 
+.product-card,
+.subprocessor-card,
+.paper-page {
+    filter: var(--drop-shadow);
+}
