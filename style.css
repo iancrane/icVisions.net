@@ -461,7 +461,7 @@ th {
     height: 100%;
 	background-image: url('main/images/paper-texture.jpg');
     background-attachment: scroll;
-    background-position: center;
+    background-position: 0 0;
     filter: opacity(50%);   /* Soften and lighten the background image */
     z-index: -1;            /* Avoid applying the filter to child elements */
 }
