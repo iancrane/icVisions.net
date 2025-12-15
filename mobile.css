@@ -4,5 +4,9 @@
     padding: 0px;
 }
 #content {
-	padding: 10px 30px;
+	padding: 10px 30px 20px 30px;
+}
+
+.paper-page {
+    border-top: #222 1px solid; /* needs to be darker with no gap between the page and the header's drop shadow */
 }

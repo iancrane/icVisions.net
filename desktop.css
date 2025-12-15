@@ -4,11 +4,15 @@
     padding: 20px;
 }
 #content {
-	padding: 40px 80px;
+	padding: 30px 60px;
 }
 
 .product-card,
 .subprocessor-card,
 .paper-page {
     filter: var(--drop-shadow);
+}
+
+.paper-page {
+    border-top: #ccc 1px solid; /* needs to be darker with no gap between the page and the header's drop shadow */
 }
