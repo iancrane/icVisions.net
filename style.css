@@ -1,533 +1,614 @@
 @charset "utf-8";
 
 :root {
-    --tiny-drop-shadow: drop-shadow(2px 2px 1px rgba(0,0,0,0.2));
-    --drop-shadow: drop-shadow(1px 1px 2px rgba(0,0,0,0.2));
-    --large-drop-shadow: drop-shadow(1px 10px 5px rgba(0,0,0,0.25));
-    --gradient-separator: linear-gradient(to right, rgba(32, 32, 32, 0.1), rgba(32, 32, 32, 0.3), rgba(32, 32, 32, 0.1));
-    --menu-separator: linear-gradient(to right, rgba(32, 32, 32, 0.025), rgba(32, 32, 32, 0.1), rgba(32, 32, 32, 0.025));
-    --menu-border-color: rgba(0,0,0,0.5);
-    --menu-box-shadow: 0px 0px 1px var(--menu-border-color);
-    --bgc-menu-item-hover: #f6f6f6;
-    --bgc-current-menu-item: #eee;
-    --bgc-default: #fff;
-    --image-link-hover: invert(9%) sepia(94%) saturate(6958%) hue-rotate(247deg) brightness(90%) contrast(146%);
+  --tiny-drop-shadow     : drop-shadow(2px 2px 1px rgba(0,0,0,0.2));
+  --drop-shadow          : drop-shadow(1px 1px 2px rgba(0,0,0,0.2));
+  --large-drop-shadow    : drop-shadow(1px 10px 5px rgba(0,0,0,0.25));
+  --gradient-separator   : linear-gradient(to right, rgba(32, 32, 32, 0.1), rgba(32, 32, 32, 0.3), rgba(32, 32, 32, 0.1));
+  --menu-separator       : linear-gradient(to right, rgba(32, 32, 32, 0.025), rgba(32, 32, 32, 0.1), rgba(32, 32, 32, 0.025));
+  --menu-border-color    : rgba(0,0,0,0.5);
+  --menu-box-shadow      : 0px 0px 1px var(--menu-border-color);
+  --bgc-menu-item-hover  : #f6f6f6;
+  --bgc-current-menu-item: #eee;
+  --bgc-default          : #fff;
+  --image-link-hover     : invert(9%) sepia(94%) saturate(6958%) hue-rotate(247deg) brightness(90%) contrast(146%);
 }
 
 /* Defaults for HTML tags to override user-agent settings
 -------------------------------------------------------------- */
 body, div, h1, h2, h3, h4, h5, h6, p {
-	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
-	border: 0;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
+  font-family   : "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  border        : 0;
+  margin        : 0;
+  padding       : 0;
+  vertical-align: baseline;
 }
+
 a {
-	color: inherit;
-	text-decoration: none;
+  color          : inherit;
+  text-decoration: none;
 }
+
 a:hover {
-	color: blue;
+  color: blue;
 }
+
 body {
-	background: var(--bgc-default);
-    color:  #222;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  background    : var(--bgc-default);
+  color         : #222;
+  display       : flex;
+  flex-direction: column;
+  min-height    : 100vh;
 }
+
 code {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
+
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
+  clear: both;
 }
+
 h1 {
-    font-size: 2em;
-    margin: 20px 0 6px 0;
+  font-size: 2em;
+  margin   : 20px 0 6px 0;
 }
+
 h2 {
-    font-size: 1.6em;
-    margin: 20px 0 6px 0;
+  font-size: 1.6em;
+  margin   : 20px 0 6px 0;
 }
+
 h3 {
-    font-size: 1.4em;
-    margin: 15px 0 6px 0;
+  font-size: 1.4em;
+  margin   : 15px 0 6px 0;
 }
+
 h4 {
-    font-size: 1.2em;
-    margin: 12px 0 4px 0;
+  font-size: 1.2em;
+  margin   : 12px 0 4px 0;
 }
+
 h5 {
-    font-size: 1em;
-    margin: 8px 0 4px 0;
+  font-size: 1em;
+  margin   : 8px 0 4px 0;
 }
+
 h6 {
-    font-size: 0.8em;
-    margin-bottom: 8px;
+  font-size    : 0.8em;
+  margin-bottom: 8px;
 }
+
 img {
-	background: transparent;
-	border: none;
-	vertical-align: middle;
+  background    : transparent;
+  border        : none;
+  vertical-align: middle;
 }
+
 ul, ol {
-    padding-inline-start: 10px;
-    margin: 0;
+  padding-inline-start: 10px;
+  margin              : 0;
 }
+
 li {
-    margin: 5px 10px 5px 20px;
+  margin: 5px 10px 5px 20px;
 }
+
 ul.horizontal {
-    list-style-type: none;
-    position: relative;
+  list-style-type: none;
+  position       : relative;
 }
+
 ul.horizontal li {
-    display: inline-block;
-    position: relative;
-    margin-right: 10px;
-    padding-left: 30px;
+  display     : inline-block;
+  position    : relative;
+  margin-right: 10px;
+  padding-left: 30px;
 }
+
 ul.horizontal li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-image: url('main/images/star.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
+  content          : "";
+  position         : absolute;
+  left             : 0;
+  top              : 50%;
+  transform        : translateY(-50%);
+  width            : 20px;
+  height           : 20px;
+  background-image : url('main/images/star.svg');
+  background-size  : cover;
+  background-repeat: no-repeat;
 }
+
 ol li ol li {
-    list-style-type: lower-alpha;
+  list-style-type: lower-alpha;
 }
+
 ol li ol li ol li {
-    list-style-type: lower-roman;
+  list-style-type: lower-roman;
 }
+
 li p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
+
 p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
+
 table {
-    border: 1px solid #777;
-    border-collapse: collapse;
-    margin: 15px 0px;
-    width: 100%;
+  border         : 1px solid #777;
+  border-collapse: collapse;
+  margin         : 15px 0px;
+  width          : 100%;
 }
+
 tr {
-    background-color: #fff;
+  background-color: #fff;
 }
+
 td, th {
-    border: 1px solid #777;
-    padding: 4px 8px;
-    text-align: left;
+  border    : 1px solid #777;
+  padding   : 4px 8px;
+  text-align: left;
 }
+
 th {
-    background-color: #ddd;
-    font-weight: bold;
+  background-color: #ddd;
+  font-weight     : bold;
 }
+
 /* General classes
 -------------------------------------------------------------- */
 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  display     : block;
+  margin-left : auto;
+  margin-right: auto;
+  text-align  : center;
 }
 .hidden-anchor {
-    display: block;
-    position: relative;
-    top: -65px;             /* Height of fixed header plus a skosh */
-    visibility: hidden;
+  display   : block;
+  position  : relative;
+  top       : -65px;  /* Height of fixed header plus a skosh */
+  visibility: hidden;
 }
+
 .last-updated {
-    color: #666;
-    font-size: 0.9em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    margin-top: 0px;
+  color        : #666;
+  font-size    : 0.9em;
+  font-weight  : bold;
+  margin-bottom: 10px;
+  margin-top   : 0px;
 }
-.last-updated time {   
-    color: #555;
-    font-style: italic;
-    font-weight: normal;
+
+.last-updated time {
+  color      : #555;
+  font-style : italic;
+  font-weight: normal;
 }
+
 .image-link:hover {
-    filter: var(--image-link-hover);
+  filter: var(--image-link-hover);
 }
+
 /* Gradient separators for menus and sections
 -------------------------------------------------------------- */
 .gradient-separator-top,
 .gradient-separator-bottom {
-    background-image: var(--gradient-separator);
-    background-repeat: no-repeat;
-    background-size: 100% 1px;
+  background-image : var(--gradient-separator);
+  background-repeat: no-repeat;
+  background-size  : 100% 1px;
 }
+
 .gradient-separator-bottom {
-    background-position: bottom center;
+  background-position: bottom center;
 }
+
 .gradient-separator-top {
-    background-position: top center;
+  background-position: top center;
 }
 
 /* ID selectors for primary page layout (header / main / footer)
 -------------------------------------------------------------- */
 #header, #main, #footer {
-	clear: both;
+  clear: both;
 }
+
 #header, #footer {
-    background-color: #ddd;
-    box-sizing: border-box;
-    padding: 8px;
-    width: 100%;
-    z-index: 1000;
+  background-color: #ddd;
+  box-sizing      : border-box;
+  padding         : 8px;
+  width           : 100%;
+  z-index         : 1000;
 }
-#header{
-    position: fixed;
+
+#header {
+  position: fixed;
 }
+
 #main {
-    margin-top: 53px;   /* Compensate for fixed header */
-    flex-grow: 1;
+  margin-top: 53px;  /* Compensate for fixed header */
+  flex-grow : 1;
 }
+
 #footer {
-    display: flex;
-    font-size: 0.8em;
-    line-height: 1.4em;
+  display    : flex;
+  font-size  : 0.8em;
+  line-height: 1.4em;
 }
+
 /* Branding (in the header of each page)
 -------------------------------------------------------------- */
 #branding {
-    display: flex;
-    align-items: center;
+  display    : flex;
+  align-items: center;
 }
+
 #site-title {
-    font-size: 2em;
-	font-weight: bold;
-    margin-left: 10px;
-    white-space: nowrap;
+  font-size  : 2em;
+  font-weight: bold;
+  margin-left: 10px;
+  white-space: nowrap;
 }
+
 #site-description {
-    font-size: 1em;
-	font-style: italic;
-	margin-left: auto;
-    margin-right: auto;
-    padding: 0px 10px;
-    white-space: nowrap;
+  font-size   : 1em;
+  font-style  : italic;
+  margin-left : auto;
+  margin-right: auto;
+  padding     : 0px 10px;
+  white-space : nowrap;
 }
+
 /* Site navigation menu
 -------------------------------------------------------------- */
 #access ul {
-    list-style: none;
-    padding-inline-start: 0px;
+  list-style          : none;
+  padding-inline-start: 0px;
 }
+
 .menu-root-item {
-    line-height: normal;
-    position: relative;
-    padding: 0;
-    margin: 0;
-    transition-duration: .1s;
+  line-height        : normal;
+  position           : relative;
+  padding            : 0;
+  margin             : 0;
+  transition-duration: .1s;
 }
+
 .menu-root-item:hover,
 .menu-root-item:focus-within {
-    background-color: var(--bgc-menu-item-hover);
-    box-shadow: var(--menu-box-shadow);
+  background-color: var(--bgc-menu-item-hover);
+  box-shadow      : var(--menu-box-shadow);
 }
+
 .menu-root-item:hover > ul,
 .menu-root-item:focus-within > ul {
-    cursor: pointer;
-    text-decoration: underline;
-    visibility: visible;
-    opacity: 1;
-    display: block;
+  cursor         : pointer;
+  text-decoration: underline;
+  visibility     : visible;
+  opacity        : 1;
+  display        : block;
 }
+
 .menu-items-container {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    right: 0;
-    left: auto;
-    min-width: 5rem;
-    box-shadow: var(--menu-box-shadow);
+  display   : none;
+  opacity   : 0;
+  visibility: hidden;
+  position  : absolute;
+  right     : 0;
+  left      : auto;
+  min-width : 5rem;
+  box-shadow: var(--menu-box-shadow);
 }
+
 .menu-item,
 .menu-item-current {
-    box-sizing: border-box;
-    clear: both;
-    display: block;
-    float: right;
-    line-height: 40px;
-    padding: 6px;
-    position: relative;
-    margin: 0px;
-    text-decoration: none;
-    transition: all .1s ease;
-    width: 100%;
+  box-sizing     : border-box;
+  clear          : both;
+  display        : block;
+  float          : right;
+  line-height    : 40px;
+  padding        : 6px;
+  position       : relative;
+  margin         : 0px;
+  text-decoration: none;
+  transition     : all .1s ease;
+  width          : 100%;
 }
+
 .menu-item-current:not(:last-child),
 .menu-item:not(:last-child) {
-    background-image: var(--menu-separator);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 100% 1px;
-}
-.menu-item-current {
-    background-color: var(--bgc-current-menu-item);
-    border: #aaa 1px dashed;
-}
-.menu-item {
-    background-color: var(--bgc-default);
-}
-.menu-item:hover {
-    background-color: var(--bgc-menu-item-hover);
+  background-image   : var(--menu-separator);
+  background-position: bottom center;
+  background-repeat  : no-repeat;
+  background-size    : 100% 1px;
 }
 
+.menu-item-current {
+  background-color: var(--bgc-current-menu-item);
+  border          : #aaa 1px dashed;
+}
+
+.menu-item {
+  background-color: var(--bgc-default);
+}
+
+.menu-item:hover {
+  background-color: var(--bgc-menu-item-hover);
+}
 
 #access a {
-    display: block;
-    white-space: nowrap;
+  display    : block;
+  white-space: nowrap;
 }
+
 #access a img {
-    margin-right: 8px;
+  margin-right: 8px;
 }
-
-
 
 /* Content
 -------------------------------------------------------------- */
 #container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+  width          : 100%;
 }
+
 #content {
-    max-width: 800px;
+  max-width: 800px;
 }
+
 #content ul,
 #content ol,
 #content dd,
 #content pre,
 #content hr {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+
 #content ul ul,
 #content ol ol,
 #content ul ol,
 #content ol ul {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .big-shadow {
-    filter: var(--large-drop-shadow);
+  filter: var(--large-drop-shadow);
 }
+
 .icon-32 {
-    width: 32px;
-    height: 32px;
+  width : 32px;
+  height: 32px;
 }
+
 .icon-48 {
-    width: 48px;
-    height: 48px;
+  width : 48px;
+  height: 48px;
 }
+
 .icon-120 {
-    width: 120px;
-    height: 120px;
+  width : 120px;
+  height: 120px;
 }
+
 .icon-48,
 .icon-120,
 .subprocessor-name {
-    filter: var(--tiny-drop-shadow);
+  filter: var(--tiny-drop-shadow);
 }
 
 .content-section,
 .content-section-center {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 100%;
-    margin-bottom: 20px;
-	clear: both;
-    width: 100%;
+  display      : flex;
+  flex-wrap    : wrap;
+  flex-basis   : 100%;
+  align-content: center;
+  margin-bottom: 20px;
+  clear        : both;
+  width        : 100%;
 }
 
 .content-section {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
+
 .content-section-center {
-    justify-content: center;
+  justify-content: center;
 }
+
 .content-section p img {
-	padding: 0 6px 0 0;
+  padding: 0 6px 0 0;
 }
+
 .product-card {
-    margin: 40px 20px 10px 20px;
-    max-width: 400px;
-    padding-bottom: 15px;
-    /* These lines are required to make the ::before pseudo-element work */
-    position: relative;
-    z-index: 1; 
+  margin        : 40px 20px 10px 20px;
+  max-width     : 400px;
+  padding-bottom: 15px;
+  /* These lines are required to make the ::before pseudo-element work */
+  position      : relative;
+  z-index       : 1;
 }
+
 .product-card-header {
-    background-color: rgba(0, 0, 0, 0.1);
-    background-image: var(--gradient-separator);
-    background-repeat: no-repeat;
-    background-position: bottom center; /* Position at the bottom */
-    background-size: 100% 1px;
+  background-color   : rgba(0, 0, 0, 0.1);
+  background-image   : var(--gradient-separator);
+  background-repeat  : no-repeat;
+  background-position: bottom center;  /* Position at the bottom */
+  background-size    : 100% 1px;
 }
+
 .product-branding {
-    align-items: center;
-    display: flex;
-    clear: both;
-    padding-bottom: 17px;
-    width: 100%;
+  align-items   : center;
+  display       : flex;
+  clear         : both;
+  padding-bottom: 17px;
+  width         : 100%;
 }
+
 .product-name {
-    font-size: 1.4em;
-    font-weight: bold;
-    margin: 0px 10px 0px 15px;
+  font-size  : 1.4em;
+  font-weight: bold;
+  margin     : 0px 10px 0px 15px;
 }
+
 .product-section {
-    margin: 15px 15px 0px 15px;
+  margin: 15px 15px 0px 15px;
 }
+
 .product-label {
-    font-weight: bold;
-    line-height: 1.4em;
-    margin: 0px 0px 3px 0px;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin     : 0px 0px 3px 0px;
 }
+
 .product-value {
-    line-height: 1.2em;
-    margin: 3px 0px 0px 0px;
+  line-height: 1.2em;
+  margin     : 3px 0px 0px 0px;
 }
+
 .background-home {
-    background-image: url('main/images/home.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80%;
+  background-image   : url('main/images/home.svg');
+  background-position: center;
+  background-repeat  : no-repeat;
+  background-size    : 80%;
 }
 
 /* Footer
 -------------------------------------------------------------- */
 #footer summary {
-    cursor: pointer;
+  cursor: pointer;
 }
+
 #footer ul {
-    color: #222;
-    font-weight: bold;
-    list-style-type: none;
+  color          : #222;
+  font-weight    : bold;
+  list-style-type: none;
 }
+
 #footer li {
-    font-weight: normal;
-    margin: 3px 10px;
+  font-weight: normal;
+  margin     : 3px 10px;
 }
+
 #footer .policies {
-    margin-right: auto;
-    vertical-align: middle;
+  margin-right  : auto;
+  vertical-align: middle;
 }
+
 #legal-disclosures-list {
-    font-size: 80%;
-    line-height: 1.4em;
+  font-size  : 80%;
+  line-height: 1.4em;
 }
+
 #copyright {
-    display: inline-block;
-    margin-left: 10px;
-    text-align: right;
+  display    : inline-block;
+  margin-left: 10px;
+  text-align : right;
 }
 
 /* Home page
 -------------------------------------------------------------- */
 .muted-svg {
-    height: 80%;
-    width: 80%;
-    max-height: 300px;
-    max-width: 300px;
-    filter: brightness(300%) opacity(10%);
+  height    : 80%;
+  width     : 80%;
+  max-height: 300px;
+  max-width : 300px;
+  filter    : brightness(300%) opacity(10%);
 }
 
 /* IceBerg pages
 -------------------------------------------------------------- */
 .iceberg-bg {
-	background: url('IceBerg/images/iceberg-icon-960.png') top 100px center no-repeat;
-    background-attachment: fixed;
+  background           : url('IceBerg/images/iceberg-icon-960.png') top 100px center no-repeat;
+  background-attachment: fixed;
 }
+
 .disclosure-bg {
-    background-color: #f6f6f6;
+  background-color: #f6f6f6;
 }
+
 .subprocessor-card {
-    background-color: rgba(247, 251, 253, 0.8);
-    margin: 40px 0px 10px 0px;
-    padding-bottom: 15px;
-    /* These lines are required to make the ::before pseudo-element work */
-    position: relative;
-    z-index: 1; 
+  background-color: rgba(247, 251, 253, 0.8);
+  margin          : 40px 0px 10px 0px;
+  padding-bottom  : 15px;
+  /* These lines are required to make the ::before pseudo-element work */
+  position        : relative;
+  z-index         : 1;
 }
+
 .product-card::before,
 .subprocessor-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-	background-image: url('main/images/paper-texture.jpg');
-    background-attachment: scroll;
-    background-position: 0 0;
-    filter: opacity(50%);   /* Soften and lighten the background image */
-    z-index: -1;            /* Avoid applying the filter to child elements */
+  content              : "";
+  position             : absolute;
+  top                  : 0;
+  left                 : 0;
+  width                : 100%;
+  height               : 100%;
+  background-image     : url('main/images/paper-texture.jpg');
+  background-attachment: scroll;
+  background-position  : 0 0;
+  filter               : opacity(50%);  /* Soften and lighten the background image */
+  z-index              : -1;  /* Avoid applying the filter to child elements */
 }
+
 .subprocessor-card-header {
-    background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
+
 .subprocessor-branding {
-    align-items: center;
-    display: flex;
-    clear: both;
-    padding-bottom: 17px;
-    width: 100%;
+  align-items   : center;
+  display       : flex;
+  clear         : both;
+  padding-bottom: 17px;
+  width         : 100%;
 }
+
 .subprocessor-name {
-    font-size: 1.4em;
-    font-weight: bold;
-    margin: 0px 10px 0px 15px;
+  font-size  : 1.4em;
+  font-weight: bold;
+  margin     : 0px 10px 0px 15px;
 }
+
 .subprocessor-section {
-    margin: 15px 15px 0px 15px;
+  margin: 15px 15px 0px 15px;
 }
+
 .subprocessor-label {
-    font-weight: bold;
-    line-height: 1.4em;
-    margin: 0px 0px 3px 0px;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin     : 0px 0px 3px 0px;
 }
+
 .subprocessor-value {
-    line-height: 1.2em;
-    margin: 3px 0px 0px 0px;
+  line-height: 1.2em;
+  margin     : 3px 0px 0px 0px;
 }
+
 .paper-page {
-    background-color: white;
-    border-radius: 2px;
-    max-width: 800px;
+  background-color: white;
+  border-radius   : 2px;
+  max-width       : 800px;
 }
+
 .paper-page a {
-    color: blue;
-    text-decoration: underline;
+  color          : blue;
+  text-decoration: underline;
 }
 
 .product-card,
 .subprocessor-card {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    border-top: #ccc 1px solid;
+  border-radius : 5px;
+  display       : flex;
+  flex-direction: column;
+  border-top    : #ccc 1px solid;
 }
 
 .paper-page,
 .product-card,
 .subprocessor-card {
-    /* Note - border-top is set above for cards, and via mobile/desktop css files for paper-page */
-    border-left: #ccc 1px solid;
-    border-right: #aaa 1px solid;
-    border-bottom: #aaa 1px solid;
+  /* Note - border-top is set above for cards, and via mobile/desktop css files for paper-page */
+  border-left  : #ccc 1px solid;
+  border-right : #aaa 1px solid;
+  border-bottom: #aaa 1px solid;
 }
